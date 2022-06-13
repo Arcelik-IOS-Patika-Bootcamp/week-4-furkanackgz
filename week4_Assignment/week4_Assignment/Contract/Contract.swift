@@ -7,15 +7,22 @@
 
 import Foundation
 
-protocol ViewProtocol: AnyObject {
+protocol HomeViewProtocol: AnyObject {
     var presenter: Contract.Presenter! { get set }
     
     func updateFavoritesTableView()
     func updateAscDesTableView()
 }
 
+protocol CryptoCurrencyViewProtocol: AnyObject {
+    var presenter: Contract.Presenter! { get set }
+    
+    func updateCollectionView()
+}
+
 protocol PresenterProtocol: AnyObject {
-    var view: Contract.View? { get set }
+    var homeView: Contract.HomeView? { get set }
+    var cryptoCurrencyView: Contract.CryptoCurrencyView? { get set }
     var interactor: Contract.Interactor! { get set }
     var router: Contract.Router! { get set }
     
@@ -43,7 +50,8 @@ protocol RouterProtocol: AnyObject {
 }
 
 struct Contract {
-    typealias View = ViewProtocol
+    typealias HomeView = HomeViewProtocol
+    typealias CryptoCurrencyView = CryptoCurrencyViewProtocol
     typealias Interactor = InteractorProtocol
     typealias Presenter = PresenterProtocol
     typealias Entity = EntityProtocol
