@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y5C-km-bFY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-yf-iUo" userLabel="Container View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="G6F-k7-WNm" userLabel="Favorite Stack View">
                                         <rect key="frame" x="20" y="10" width="374" height="38"/>
@@ -41,6 +41,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="buttonAddTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTt-B1-1yx"/>
+                                                    <segue destination="06j-QD-hYf" kind="show" id="PIH-8o-5MJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -84,7 +85,7 @@
                                         </constraints>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-aA-Dyy" userLabel="Ascendants Table View">
-                                        <rect key="frame" x="0.0" y="388" width="414" height="430"/>
+                                        <rect key="frame" x="0.0" y="388" width="414" height="386"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                 </subviews>
@@ -115,6 +116,9 @@
                             <constraint firstItem="xzP-yf-iUo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fiK-cC-LhP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IKU-Vo-LGf">
+                        <barButtonItem key="backBarButtonItem" title=" " id="L8h-XW-H4N"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="buttonAdd" destination="f6S-px-gA9" id="3QO-Ue-ARC"/>
                         <outlet property="buttonAscendants" destination="wZ8-YQ-7Ya" id="YnI-1f-Sge"/>
@@ -126,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="89"/>
+            <point key="canvasLocation" x="1033" y="88"/>
         </scene>
         <!--Crypto Currencies View Controller-->
         <scene sceneID="6wj-H8-FDi">
@@ -137,10 +141,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHy-8D-6xQ" userLabel="Container View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UHN-bT-Sc2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Qj-8K-Hg5">
                                             <size key="itemSize" width="128" height="128"/>
@@ -178,13 +182,34 @@
                             <constraint firstItem="EHy-8D-6xQ" firstAttribute="leading" secondItem="tNS-yC-OOP" secondAttribute="leading" id="Nag-KM-LGV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yHK-0U-6e1">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Vxh-rZ-w9k"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="UHN-bT-Sc2" id="CHZ-Db-xZl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNI-An-YMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="88"/>
+            <point key="canvasLocation" x="1960.8695652173915" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9M2-Lf-jgL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y5C-km-bFY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bas-nM-xwP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GSG-wC-PrQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgG-aB-nIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
