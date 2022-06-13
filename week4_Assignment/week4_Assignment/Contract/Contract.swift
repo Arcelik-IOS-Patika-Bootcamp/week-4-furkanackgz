@@ -8,23 +8,37 @@
 import Foundation
 
 protocol ViewProtocol: AnyObject {
-    var presenter: Contract.Presenter! {get set}
+    var presenter: Contract.Presenter! { get set }
+    
+    func updateFavoritesTableView()
+    func updateAscDesTableView()
 }
 
 protocol PresenterProtocol: AnyObject {
-    var view: Contract.View? {get set}
-    var interactor: Contract.Interactor! {get set}
-    var router: Contract.Router! {get set}
+    var view: Contract.View? { get set }
+    var interactor: Contract.Interactor! { get set }
+    var router: Contract.Router! { get set }
+    
+    func viewDidload()
+    func buttonAddTapped()
+    func buttonAscendantsTapped()
+    func buttonDescendantsTapped()
+    
+    func didDataFetch()
 }
 
 protocol InteractorProtocol: AnyObject {
-    var presenter: Contract.Presenter? {get set}
+    var presenter: Contract.Presenter? { get set }
+    
+    var data: [CryptoCurrency]? { get }
+    
+    func fetchData()
 }
 
 protocol EntityProtocol: AnyObject { }
 
 protocol RouterProtocol: AnyObject {
-    var presenter: Contract.Presenter? {get set}
+    var presenter: Contract.Presenter? { get set }
 }
 
 struct Contract {
