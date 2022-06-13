@@ -19,7 +19,9 @@
 		0B7062D7285771FB0046479C /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D6285771FB0046479C /* Interactor.swift */; };
 		0B7062DC285775230046479C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DB285775230046479C /* WebService.swift */; };
 		0B7062DF285780030046479C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DE285780030046479C /* Presenter.swift */; };
-		0B7062E12857CCCD0046479C /* MainTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E02857CCCD0046479C /* MainTableViewHelper.swift */; };
+		0B7062E12857CCCD0046479C /* FavoritesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */; };
+		0B7062E52857D5ED0046479C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */; };
+		0B7062E62857D5ED0046479C /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,9 @@
 		0B7062D6285771FB0046479C /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		0B7062DB285775230046479C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		0B7062DE285780030046479C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		0B7062E02857CCCD0046479C /* MainTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewHelper.swift; sourceTree = "<group>"; };
+		0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewHelper.swift; sourceTree = "<group>"; };
+		0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				0B3BB3182856745B0072A76E /* MainView.swift */,
-				0B7062E02857CCCD0046479C /* MainTableViewHelper.swift */,
+				0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */,
+				0B7062E22857CF600046479C /* XIB files */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -142,6 +147,15 @@
 				0B7062DE285780030046479C /* Presenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0B7062E22857CF600046479C /* XIB files */ = {
+			isa = PBXGroup;
+			children = (
+				0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */,
+				0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */,
+			);
+			path = "XIB files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B3BB3212856745C0072A76E /* LaunchScreen.storyboard in Resources */,
+				0B7062E62857D5ED0046479C /* FavoriteTableViewCell.xib in Resources */,
 				0B3BB31E2856745C0072A76E /* Assets.xcassets in Resources */,
 				0B3BB31C2856745B0072A76E /* Main.storyboard in Resources */,
 			);
@@ -216,7 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7062DF285780030046479C /* Presenter.swift in Sources */,
-				0B7062E12857CCCD0046479C /* MainTableViewHelper.swift in Sources */,
+				0B7062E12857CCCD0046479C /* FavoritesTableViewHelper.swift in Sources */,
 				0B3BB3192856745B0072A76E /* MainView.swift in Sources */,
 				0B3BB3152856745B0072A76E /* AppDelegate.swift in Sources */,
 				0B7062DC285775230046479C /* WebService.swift in Sources */,
@@ -225,6 +240,7 @@
 				0B7062CE285746F70046479C /* Contract.swift in Sources */,
 				0B7062D7285771FB0046479C /* Interactor.swift in Sources */,
 				0B7062D328576CD70046479C /* ContractHelper.swift in Sources */,
+				0B7062E52857D5ED0046479C /* FavoriteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
