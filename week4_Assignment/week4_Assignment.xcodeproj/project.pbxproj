@@ -19,6 +19,7 @@
 		0B7062D7285771FB0046479C /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D6285771FB0046479C /* Interactor.swift */; };
 		0B7062DC285775230046479C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DB285775230046479C /* WebService.swift */; };
 		0B7062DF285780030046479C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DE285780030046479C /* Presenter.swift */; };
+		0B7062E12857CCCD0046479C /* MainTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E02857CCCD0046479C /* MainTableViewHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0B7062D6285771FB0046479C /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		0B7062DB285775230046479C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		0B7062DE285780030046479C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		0B7062E02857CCCD0046479C /* MainTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				0B3BB3182856745B0072A76E /* MainView.swift */,
+				0B7062E02857CCCD0046479C /* MainTableViewHelper.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7062DF285780030046479C /* Presenter.swift in Sources */,
+				0B7062E12857CCCD0046479C /* MainTableViewHelper.swift in Sources */,
 				0B3BB3192856745B0072A76E /* MainView.swift in Sources */,
 				0B3BB3152856745B0072A76E /* AppDelegate.swift in Sources */,
 				0B7062DC285775230046479C /* WebService.swift in Sources */,
