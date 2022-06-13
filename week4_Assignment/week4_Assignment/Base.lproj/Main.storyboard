@@ -13,7 +13,7 @@
         <!--Main View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainView" customModule="week4_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" id="BYZ-38-t0r" customClass="MainView" customModule="week4_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +76,7 @@
                                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="buttonDescendants:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23W-ew-18i"/>
+                                                    <action selector="buttonDescendantsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bg9-72-rJU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -124,8 +124,8 @@
                         <outlet property="buttonAscendants" destination="wZ8-YQ-7Ya" id="YnI-1f-Sge"/>
                         <outlet property="buttonDescendants" destination="gd5-kR-Mp2" id="qru-FQ-tGZ"/>
                         <outlet property="labelFavorites" destination="RWG-2k-LSV" id="1AU-9M-RPa"/>
-                        <outlet property="tableViewAscDes" destination="0KR-aA-Dyy" id="jD2-vF-S80"/>
-                        <outlet property="tableViewFavorites" destination="ns6-ec-zGU" id="Bs3-YP-VaF"/>
+                        <outlet property="tableViewAscDes" destination="0KR-aA-Dyy" id="xNM-zf-0Tb"/>
+                        <outlet property="tableViewFavorites" destination="ns6-ec-zGU" id="1G1-hz-YFX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

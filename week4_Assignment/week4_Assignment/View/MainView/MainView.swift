@@ -16,6 +16,7 @@ class MainView: UIViewController {
     @IBOutlet weak var buttonDescendants: UIButton!
     @IBOutlet weak var tableViewAscDes: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,7 +30,7 @@ class MainView: UIViewController {
         
     }
     
-    @IBAction func buttonDescendants(_ sender: Any) {
+    @IBAction func buttonDescendantsTapped(_ sender: Any) {
         
     }
     
