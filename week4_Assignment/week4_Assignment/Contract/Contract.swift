@@ -24,7 +24,8 @@ protocol PresenterProtocol: AnyObject {
     func buttonAscendantsTapped()
     func buttonDescendantsTapped()
     
-    func didDataFetch()
+    func didFavoritesDataFetch()
+    func didAscDesDataFetch()
 }
 
 protocol InteractorProtocol: AnyObject {
