@@ -7,14 +7,14 @@
 
 import Foundation
 
-class Presenter: Contract.Presenter {
+class Presenter: Contract.presenter {
     
-    var homeView: Contract.HomeView?
-    var cryptoCurrencyView: Contract.CryptoCurrencyView?
+    var mainView: Contract.mainView?
+    var cryptoCurrencyView: Contract.cryptoCurrencyView?
     
-    var interactor: Contract.Interactor!
+    var interactor: Contract.interactor!
     
-    var router: Contract.Router!
+    var router: Contract.router!
     
     // View related functions
     func viewDidload() {

@@ -7,24 +7,24 @@
 
 import Foundation
 
-protocol HomeViewProtocol: AnyObject {
-    var presenter: Contract.Presenter! { get set }
+protocol MainViewProtocol: AnyObject {
+    var presenter: Contract.presenter! { get set }
     
     func updateFavoritesTableView()
     func updateAscDesTableView()
 }
 
 protocol CryptoCurrencyViewProtocol: AnyObject {
-    var presenter: Contract.Presenter! { get set }
+    var presenter: Contract.presenter! { get set }
     
     func updateCollectionView()
 }
 
 protocol PresenterProtocol: AnyObject {
-    var homeView: Contract.HomeView? { get set }
-    var cryptoCurrencyView: Contract.CryptoCurrencyView? { get set }
-    var interactor: Contract.Interactor! { get set }
-    var router: Contract.Router! { get set }
+    var mainView: Contract.mainView? { get set }
+    var cryptoCurrencyView: Contract.cryptoCurrencyView? { get set }
+    var interactor: Contract.interactor! { get set }
+    var router: Contract.router! { get set }
     
     func viewDidload()
     func buttonAddTapped()
@@ -36,7 +36,7 @@ protocol PresenterProtocol: AnyObject {
 }
 
 protocol InteractorProtocol: AnyObject {
-    var presenter: Contract.Presenter? { get set }
+    var presenter: Contract.presenter? { get set }
     
     var data: [CryptoCurrency]? { get }
     
@@ -46,14 +46,14 @@ protocol InteractorProtocol: AnyObject {
 protocol EntityProtocol: AnyObject { }
 
 protocol RouterProtocol: AnyObject {
-    var presenter: Contract.Presenter? { get set }
+    var presenter: Contract.presenter? { get set }
 }
 
 struct Contract {
-    typealias HomeView = HomeViewProtocol
-    typealias CryptoCurrencyView = CryptoCurrencyViewProtocol
-    typealias Interactor = InteractorProtocol
-    typealias Presenter = PresenterProtocol
-    typealias Entity = EntityProtocol
-    typealias Router = RouterProtocol
+    typealias mainView = MainViewProtocol
+    typealias cryptoCurrencyView = CryptoCurrencyViewProtocol
+    typealias interactor = InteractorProtocol
+    typealias presenter = PresenterProtocol
+    typealias entity = EntityProtocol
+    typealias router = RouterProtocol
 }

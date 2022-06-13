@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainView: UIViewController {
+class MainView: UIViewController, Contract.mainView  {
 
     @IBOutlet weak var labelFavorites: UILabel!
     @IBOutlet weak var buttonAdd: UIButton!
@@ -16,6 +16,7 @@ class MainView: UIViewController {
     @IBOutlet weak var buttonDescendants: UIButton!
     @IBOutlet weak var tableViewAscDes: UITableView!
     
+    var presenter: Contract.presenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,16 @@ class MainView: UIViewController {
         
     }
     
-    
 }
 
+// MARK: - Presenter Related
+extension MainView {
+    
+    func updateFavoritesTableView() {
+        <#code#>
+    }
+    
+    func updateAscDesTableView() {
+        <#code#>
+    }
+}

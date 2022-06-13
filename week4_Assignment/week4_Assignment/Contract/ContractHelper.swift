@@ -9,4 +9,21 @@ import UIKit
 
 extension Contract {
     
+    static func createModule() -> UIViewController? {
+        
+        if let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainView") as? MainView {
+            
+            let presenter = Presenter()
+            let interactor = Interactor()
+            
+            mainView.presenter = presenter
+            presenter.mainView = mainView
+            presenter.interactor = interactor
+            interactor.presenter = presenter
+            
+            return mainView
+        }
+        
+        return nil
+    }
 }

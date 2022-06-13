@@ -68,11 +68,11 @@
 		0B3BB3132856745B0072A76E /* week4_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				0B7062DD28577E880046479C /* Presenter */,
 				0B7062DA285775140046479C /* WebService */,
 				0B7062CC285746DD0046479C /* Contract */,
 				0B7062D428576FDF0046479C /* View */,
 				0B7062D5285770020046479C /* Interactor */,
+				0B7062DD28577E880046479C /* Presenter */,
 				0B3BB3142856745B0072A76E /* AppDelegate.swift */,
 				0B3BB3162856745B0072A76E /* SceneDelegate.swift */,
 				0B3BB31A2856745B0072A76E /* Main.storyboard */,

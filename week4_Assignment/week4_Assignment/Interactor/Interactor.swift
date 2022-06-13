@@ -31,11 +31,11 @@ struct CryptoCurrency: Codable {
     var count: Int?
 }
 
-class Interactor: Contract.Interactor {
+class Interactor: Contract.interactor {
     
     var data: [CryptoCurrency]?
     
-    var presenter: Contract.Presenter?
+    var presenter: Contract.presenter?
     
     func fetchData() {
         WebService.run.fetchCryptoCurrencies { [unowned self] data in
