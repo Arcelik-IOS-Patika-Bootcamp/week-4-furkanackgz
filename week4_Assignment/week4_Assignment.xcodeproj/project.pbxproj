@@ -13,6 +13,7 @@
 		0B3BB31C2856745B0072A76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BB31A2856745B0072A76E /* Main.storyboard */; };
 		0B3BB31E2856745C0072A76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BB31D2856745C0072A76E /* Assets.xcassets */; };
 		0B3BB3212856745C0072A76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BB31F2856745C0072A76E /* LaunchScreen.storyboard */; };
+		0B7062CE285746F70046479C /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062CD285746F70046479C /* Contract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0B3BB31D2856745C0072A76E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B3BB3202856745C0072A76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B3BB3222856745C0072A76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B7062CD285746F70046479C /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		0B3BB3132856745B0072A76E /* week4_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				0B7062CC285746DD0046479C /* Contract */,
+				0B7062CB285746C40046479C /* MainVC */,
 				0B3BB3142856745B0072A76E /* AppDelegate.swift */,
 				0B3BB3162856745B0072A76E /* SceneDelegate.swift */,
-				0B3BB3182856745B0072A76E /* MainViewController.swift */,
 				0B3BB31A2856745B0072A76E /* Main.storyboard */,
 				0B3BB31D2856745C0072A76E /* Assets.xcassets */,
 				0B3BB31F2856745C0072A76E /* LaunchScreen.storyboard */,
 				0B3BB3222856745C0072A76E /* Info.plist */,
 			);
 			path = week4_Assignment;
+			sourceTree = "<group>";
+		};
+		0B7062CB285746C40046479C /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				0B3BB3182856745B0072A76E /* MainViewController.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		0B7062CC285746DD0046479C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				0B7062CD285746F70046479C /* Contract.swift */,
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				0B3BB3192856745B0072A76E /* MainViewController.swift in Sources */,
 				0B3BB3152856745B0072A76E /* AppDelegate.swift in Sources */,
 				0B3BB3172856745B0072A76E /* SceneDelegate.swift in Sources */,
+				0B7062CE285746F70046479C /* Contract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
