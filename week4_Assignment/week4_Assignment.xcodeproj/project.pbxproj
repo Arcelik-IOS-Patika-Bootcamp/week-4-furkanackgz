@@ -15,6 +15,9 @@
 		0B3BB3212856745C0072A76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3BB31F2856745C0072A76E /* LaunchScreen.storyboard */; };
 		0B7062CE285746F70046479C /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062CD285746F70046479C /* Contract.swift */; };
 		0B7062D1285749D00046479C /* CryptoCurrenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D0285749D00046479C /* CryptoCurrenciesView.swift */; };
+		0B7062D328576CD70046479C /* ContractHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D228576CD70046479C /* ContractHelper.swift */; };
+		0B7062D7285771FB0046479C /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D6285771FB0046479C /* Interactor.swift */; };
+		0B7062DC285775230046479C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DB285775230046479C /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		0B3BB3222856745C0072A76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7062CD285746F70046479C /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		0B7062D0285749D00046479C /* CryptoCurrenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrenciesView.swift; sourceTree = "<group>"; };
+		0B7062D228576CD70046479C /* ContractHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractHelper.swift; sourceTree = "<group>"; };
+		0B7062D6285771FB0046479C /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		0B7062DB285775230046479C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,11 @@
 		0B3BB3132856745B0072A76E /* week4_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				0B7062DD28577E880046479C /* New Group */,
+				0B7062DA285775140046479C /* WebService */,
 				0B7062CC285746DD0046479C /* Contract */,
-				0B7062CB285746C40046479C /* MainView */,
-				0B7062CF285749450046479C /* CryptoCurrenciesView */,
+				0B7062D428576FDF0046479C /* View */,
+				0B7062D5285770020046479C /* Interactor */,
 				0B3BB3142856745B0072A76E /* AppDelegate.swift */,
 				0B3BB3162856745B0072A76E /* SceneDelegate.swift */,
 				0B3BB31A2856745B0072A76E /* Main.storyboard */,
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0B7062CD285746F70046479C /* Contract.swift */,
+				0B7062D228576CD70046479C /* ContractHelper.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -95,6 +104,38 @@
 				0B7062D0285749D00046479C /* CryptoCurrenciesView.swift */,
 			);
 			path = CryptoCurrenciesView;
+			sourceTree = "<group>";
+		};
+		0B7062D428576FDF0046479C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B7062CB285746C40046479C /* MainView */,
+				0B7062CF285749450046479C /* CryptoCurrenciesView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B7062D5285770020046479C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0B7062D6285771FB0046479C /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0B7062DA285775140046479C /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				0B7062DB285775230046479C /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		0B7062DD28577E880046479C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +211,12 @@
 			files = (
 				0B3BB3192856745B0072A76E /* MainView.swift in Sources */,
 				0B3BB3152856745B0072A76E /* AppDelegate.swift in Sources */,
+				0B7062DC285775230046479C /* WebService.swift in Sources */,
 				0B7062D1285749D00046479C /* CryptoCurrenciesView.swift in Sources */,
 				0B3BB3172856745B0072A76E /* SceneDelegate.swift in Sources */,
 				0B7062CE285746F70046479C /* Contract.swift in Sources */,
+				0B7062D7285771FB0046479C /* Interactor.swift in Sources */,
+				0B7062D328576CD70046479C /* ContractHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
