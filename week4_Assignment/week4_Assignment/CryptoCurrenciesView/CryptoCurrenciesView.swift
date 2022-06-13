@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CryptoCurrenciesViewController: UIViewController {
+class CryptoCurrenciesView: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     

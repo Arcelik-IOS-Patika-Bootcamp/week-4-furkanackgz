@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainView: UIViewController {
 
     @IBOutlet weak var labelFavorites: UILabel!
     @IBOutlet weak var buttonAdd: UIButton!
