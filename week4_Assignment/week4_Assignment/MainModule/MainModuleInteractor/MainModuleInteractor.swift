@@ -7,23 +7,23 @@
 
 import Foundation
 
-class MainViewInteractor: Contract.mainViewInteractor {
+class MainModuleInteractor: MainModuleContract.mainModuleInteractor {
     
-    var mainViewData: [CryptoCurrency]?
+    var mainModuleData: [CryptoCurrency]?
     
-    var mainViewPresenter: Contract.mainViewPresenter?
+    var mainModulePresenter: MainModuleContract.mainModulePresenter?
     
 }
 
 // MARK: - Main View Related Methods
-extension MainViewInteractor {
+extension MainModuleInteractor {
     
-    func fetchMainViewData() {
+    func fetchMainModuleData() {
         WebService.run.fetchCryptoCurrencies { [unowned self] data in
-            self.mainViewData = data
+            self.mainModuleData = data
             
             DispatchQueue.main.async {
-                self.mainViewPresenter?.didDataFetch()
+                self.mainModulePresenter?.didDataFetch()
             }
             
         }

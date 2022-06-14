@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View-->
+        <!--Main Module View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainView" id="BYZ-38-t0r" customClass="MainView" customModule="week4_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainModuleView" id="BYZ-38-t0r" customClass="MainModuleView" customModule="week4_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="1033" y="88"/>
         </scene>
-        <!--Crypto Currencies View-->
+        <!--Currency Module View-->
         <scene sceneID="6wj-H8-FDi">
             <objects>
-                <viewController id="06j-QD-hYf" customClass="CryptoCurrenciesView" customModule="week4_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrencyModuleView" id="06j-QD-hYf" customClass="CurrencyModuleView" customModule="week4_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MbG-eS-w8e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

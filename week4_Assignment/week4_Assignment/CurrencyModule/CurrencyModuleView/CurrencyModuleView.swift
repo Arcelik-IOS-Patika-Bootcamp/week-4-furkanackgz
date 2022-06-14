@@ -7,9 +7,9 @@
 
 import UIKit
 
-class CryptoCurrenciesView: UIViewController, Contract.cryptoCurrencyView {
+class CurrencyModuleView: UIViewController, CurrencyModuleContract.currencyModuleView {
     
-    var currencyViewPresenter: Contract.currencyViewPresenter!
+    var currencyModulePresenter: CurrencyModuleContract.currencyModulePresenter!
     
     private var collectionViewHelper: CollectionViewHelper!
     
@@ -23,7 +23,7 @@ class CryptoCurrenciesView: UIViewController, Contract.cryptoCurrencyView {
 }
 
 // MARK: - Crypto Currency Protocol Methods
-extension CryptoCurrenciesView {
+extension CurrencyModuleView {
     
     func updateCollectionView(_ items: [CryptoCurrency]) {
         collectionViewHelper.setItems(items)

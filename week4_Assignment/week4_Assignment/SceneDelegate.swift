@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = Contract.createModule()
+            window.rootViewController = MainModuleContract.createMainModule()
             self.window = window
             window.makeKeyAndVisible()
         }

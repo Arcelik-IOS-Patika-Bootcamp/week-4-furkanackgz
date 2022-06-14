@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainView: UIViewController, Contract.mainView  {
+class MainModuleView: UIViewController, MainModuleContract.mainModuleView  {
 
     @IBOutlet weak var labelFavorites: UILabel!
     @IBOutlet weak var buttonAdd: UIButton!
@@ -16,8 +16,8 @@ class MainView: UIViewController, Contract.mainView  {
     @IBOutlet weak var buttonDescendants: UIButton!
     @IBOutlet weak var tableViewAscDes: UITableView!
     
-    var mainViewPresenter: Contract.mainViewPresenter!
-    var currencyViewPresenter: Contract.currencyViewPresenter!
+    var mainModulePresenter: MainModuleContract.mainModulePresenter!
+    var currencyModulePresenter: CurrencyModuleContract.currencyModulePresenter!
     
     private var favoritesTableViewHelper: FavoritesTableViewHelper!
     private var ascDesTableViewHelper: AscDesTableViewHelper!
@@ -26,24 +26,24 @@ class MainView: UIViewController, Contract.mainView  {
         super.viewDidLoad()
         
         setupUI()
-        mainViewPresenter.viewDidload()
+        mainModulePresenter.viewDidload()
     }
     
     @IBAction func buttonAddTapped(_ sender: Any) {
-        mainViewPresenter.buttonAddTapped()
+        mainModulePresenter.buttonAddTapped()
     }
     
     @IBAction func buttonAscendantsTapped(_ sender: Any) {
-        mainViewPresenter.buttonAscendantsTapped()
+        mainModulePresenter.buttonAscendantsTapped()
     }
     
     @IBAction func buttonDescendantsTapped(_ sender: Any) {
-        mainViewPresenter.buttonDescendantsTapped()
+        mainModulePresenter.buttonDescendantsTapped()
     }
     
 }
 
-extension MainView {
+extension MainModuleView {
     
     func setupUI() {
         favoritesTableViewHelper = .init(with: tableViewFavorites)
@@ -52,7 +52,7 @@ extension MainView {
 }
 
 // MARK: - Presenter Related
-extension MainView {
+extension MainModuleView {
     
     func updateFavoritesTableView(_ items: [CryptoCurrency]) {
         favoritesTableViewHelper.setItems(items)
