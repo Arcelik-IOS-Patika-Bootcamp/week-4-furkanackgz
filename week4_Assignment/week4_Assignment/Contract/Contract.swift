@@ -10,14 +10,14 @@ import Foundation
 protocol MainViewProtocol: AnyObject {
     var presenter: Contract.presenter! { get set }
     
-    func updateFavoritesTableView()
-    func updateAscDesTableView()
+    func updateFavoritesTableView(_ items: [CryptoCurrency])
+    func updateAscDesTableView(_ items: [CryptoCurrency])
 }
 
 protocol CryptoCurrencyViewProtocol: AnyObject {
     var presenter: Contract.presenter! { get set }
     
-    func updateCollectionView()
+    func updateCollectionView(_ items: [CryptoCurrency])
 }
 
 protocol PresenterProtocol: AnyObject {
@@ -31,8 +31,7 @@ protocol PresenterProtocol: AnyObject {
     func buttonAscendantsTapped()
     func buttonDescendantsTapped()
     
-    func didFavoritesDataFetch()
-    func didAscDesDataFetch()
+    func didDataFetch()
 }
 
 protocol InteractorProtocol: AnyObject {

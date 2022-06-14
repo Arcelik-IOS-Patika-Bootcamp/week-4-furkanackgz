@@ -41,6 +41,10 @@ class Interactor: Contract.interactor {
         WebService.run.fetchCryptoCurrencies { [unowned self] data in
             self.data = data
             
+            DispatchQueue.main.async {
+                self.presenter?.didDataFetch()
+            }
+            
         }
     }
     
