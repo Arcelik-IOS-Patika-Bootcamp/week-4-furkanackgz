@@ -22,6 +22,12 @@
 		0B7062E12857CCCD0046479C /* FavoritesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */; };
 		0B7062E52857D5ED0046479C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */; };
 		0B7062E62857D5ED0046479C /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */; };
+		0B7062E82857DE1A0046479C /* AscDesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E72857DE1A0046479C /* AscDesTableViewHelper.swift */; };
+		0B7062F12857E14C0046479C /* AscDesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062EF2857E14C0046479C /* AscDesTableViewCell.swift */; };
+		0B7062F22857E14C0046479C /* AscDesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7062F02857E14C0046479C /* AscDesTableViewCell.xib */; };
+		0BC7BE1B28585F5500E7B233 /* CollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7BE1A28585F5500E7B233 /* CollectionViewHelper.swift */; };
+		0BC7BE1F28588A1A00E7B233 /* CryptoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7BE1D28588A1A00E7B233 /* CryptoCollectionViewCell.swift */; };
+		0BC7BE2028588A1A00E7B233 /* CryptoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7BE1E28588A1A00E7B233 /* CryptoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewHelper.swift; sourceTree = "<group>"; };
 		0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		0B7062E72857DE1A0046479C /* AscDesTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscDesTableViewHelper.swift; sourceTree = "<group>"; };
+		0B7062EF2857E14C0046479C /* AscDesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscDesTableViewCell.swift; sourceTree = "<group>"; };
+		0B7062F02857E14C0046479C /* AscDesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AscDesTableViewCell.xib; sourceTree = "<group>"; };
+		0BC7BE1A28585F5500E7B233 /* CollectionViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHelper.swift; sourceTree = "<group>"; };
+		0BC7BE1D28588A1A00E7B233 /* CryptoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewCell.swift; sourceTree = "<group>"; };
+		0BC7BE1E28588A1A00E7B233 /* CryptoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 			children = (
 				0B3BB3182856745B0072A76E /* MainView.swift */,
 				0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */,
+				0B7062E72857DE1A0046479C /* AscDesTableViewHelper.swift */,
 				0B7062E22857CF600046479C /* XIB files */,
 			);
 			path = MainView;
@@ -112,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				0B7062D0285749D00046479C /* CryptoCurrenciesView.swift */,
+				0BC7BE1A28585F5500E7B233 /* CollectionViewHelper.swift */,
+				0BC7BE1C285889E500E7B233 /* XIB files */,
 			);
 			path = CryptoCurrenciesView;
 			sourceTree = "<group>";
@@ -152,8 +167,35 @@
 		0B7062E22857CF600046479C /* XIB files */ = {
 			isa = PBXGroup;
 			children = (
+				0B7062EE2857DFB10046479C /* AscDesTableViewCell */,
+				0B7062ED2857DF9D0046479C /* FavoriteTableViewCell */,
+			);
+			path = "XIB files";
+			sourceTree = "<group>";
+		};
+		0B7062ED2857DF9D0046479C /* FavoriteTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
 				0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */,
 				0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */,
+			);
+			path = FavoriteTableViewCell;
+			sourceTree = "<group>";
+		};
+		0B7062EE2857DFB10046479C /* AscDesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0B7062EF2857E14C0046479C /* AscDesTableViewCell.swift */,
+				0B7062F02857E14C0046479C /* AscDesTableViewCell.xib */,
+			);
+			path = AscDesTableViewCell;
+			sourceTree = "<group>";
+		};
+		0BC7BE1C285889E500E7B233 /* XIB files */ = {
+			isa = PBXGroup;
+			children = (
+				0BC7BE1D28588A1A00E7B233 /* CryptoCollectionViewCell.swift */,
+				0BC7BE1E28588A1A00E7B233 /* CryptoCollectionViewCell.xib */,
 			);
 			path = "XIB files";
 			sourceTree = "<group>";
@@ -219,7 +261,9 @@
 				0B3BB3212856745C0072A76E /* LaunchScreen.storyboard in Resources */,
 				0B7062E62857D5ED0046479C /* FavoriteTableViewCell.xib in Resources */,
 				0B3BB31E2856745C0072A76E /* Assets.xcassets in Resources */,
+				0B7062F22857E14C0046479C /* AscDesTableViewCell.xib in Resources */,
 				0B3BB31C2856745B0072A76E /* Main.storyboard in Resources */,
+				0BC7BE2028588A1A00E7B233 /* CryptoCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,13 +278,17 @@
 				0B7062E12857CCCD0046479C /* FavoritesTableViewHelper.swift in Sources */,
 				0B3BB3192856745B0072A76E /* MainView.swift in Sources */,
 				0B3BB3152856745B0072A76E /* AppDelegate.swift in Sources */,
+				0B7062E82857DE1A0046479C /* AscDesTableViewHelper.swift in Sources */,
 				0B7062DC285775230046479C /* WebService.swift in Sources */,
+				0BC7BE1B28585F5500E7B233 /* CollectionViewHelper.swift in Sources */,
 				0B7062D1285749D00046479C /* CryptoCurrenciesView.swift in Sources */,
+				0BC7BE1F28588A1A00E7B233 /* CryptoCollectionViewCell.swift in Sources */,
 				0B3BB3172856745B0072A76E /* SceneDelegate.swift in Sources */,
 				0B7062CE285746F70046479C /* Contract.swift in Sources */,
 				0B7062D7285771FB0046479C /* Interactor.swift in Sources */,
 				0B7062D328576CD70046479C /* ContractHelper.swift in Sources */,
 				0B7062E52857D5ED0046479C /* FavoriteTableViewCell.swift in Sources */,
+				0B7062F12857E14C0046479C /* AscDesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
