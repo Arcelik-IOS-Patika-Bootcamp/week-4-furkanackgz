@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CryptoCollectionViewCell" id="gTV-IL-0wX" customClass="CryptoCollectionViewCell" customModule="week4_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-cU-MKC" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUU-nq-ZT7">
+                                <rect key="frame" x="20" y="10" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe0-j9-rGV">
+                                <rect key="frame" x="20" y="51" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fe0-j9-rGV" firstAttribute="top" secondItem="aUU-nq-ZT7" secondAttribute="bottom" constant="20" id="5WO-1p-feE"/>
+                            <constraint firstAttribute="trailing" secondItem="aUU-nq-ZT7" secondAttribute="trailing" constant="20" id="6nD-08-yAH"/>
+                            <constraint firstItem="Fe0-j9-rGV" firstAttribute="leading" secondItem="TMW-cU-MKC" secondAttribute="leading" constant="20" id="Eb0-Xk-wNg"/>
+                            <constraint firstItem="aUU-nq-ZT7" firstAttribute="top" secondItem="TMW-cU-MKC" secondAttribute="top" constant="10" id="XYn-E2-Li7"/>
+                            <constraint firstItem="aUU-nq-ZT7" firstAttribute="leading" secondItem="TMW-cU-MKC" secondAttribute="leading" constant="20" id="auE-qe-MJT"/>
+                            <constraint firstAttribute="trailing" secondItem="Fe0-j9-rGV" secondAttribute="trailing" constant="20" id="ti8-6k-7Yc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="TMW-cU-MKC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HBq-Tl-SY6"/>
+                <constraint firstAttribute="trailing" secondItem="TMW-cU-MKC" secondAttribute="trailing" id="p9I-kn-OmW"/>
+                <constraint firstAttribute="bottom" secondItem="TMW-cU-MKC" secondAttribute="bottom" id="qfD-09-0oJ"/>
+                <constraint firstItem="TMW-cU-MKC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sdI-6p-dYR"/>
+            </constraints>
+            <size key="customSize" width="120" height="120"/>
+            <connections>
+                <outlet property="labelLastPrice" destination="Fe0-j9-rGV" id="qeL-SH-TTK"/>
+                <outlet property="labelSymbol" destination="aUU-nq-ZT7" id="9bz-Hh-cHB"/>
+            </connections>
+            <point key="canvasLocation" x="182.60869565217394" y="139.95535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

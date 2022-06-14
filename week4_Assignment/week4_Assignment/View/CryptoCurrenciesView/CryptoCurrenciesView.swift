@@ -7,8 +7,12 @@
 
 import UIKit
 
-class CryptoCurrenciesView: UIViewController {
-
+class CryptoCurrenciesView: UIViewController, Contract.cryptoCurrencyView {
+    
+    var presenter: Contract.presenter!
+    
+    private var collectionViewHelper: CollectionViewHelper!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -16,4 +20,12 @@ class CryptoCurrenciesView: UIViewController {
 
     }
 
+}
+
+// MARK: - Crypto Currency Protocol Methods
+extension CryptoCurrenciesView {
+    
+    func updateCollectionView(_ items: [CryptoCurrency]) {
+        collectionViewHelper.setItems(items)
+    }
 }
