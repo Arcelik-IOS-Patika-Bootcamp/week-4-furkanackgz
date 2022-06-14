@@ -18,33 +18,46 @@ class MainView: UIViewController, Contract.mainView  {
     
     var presenter: Contract.presenter!
     
+    private var favoritesTableViewHelper: FavoritesTableViewHelper!
+    private var ascDesTableViewHelper: AscDesTableViewHelper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupUI()
+        presenter.viewDidload()
     }
     
     @IBAction func buttonAddTapped(_ sender: Any) {
-        
+        presenter.buttonAddTapped()
     }
     
     @IBAction func buttonAscendantsTapped(_ sender: Any) {
-        
+        presenter.buttonAscendantsTapped()
     }
     
     @IBAction func buttonDescendantsTapped(_ sender: Any) {
-        
+        presenter.buttonDescendantsTapped()
     }
     
+}
+
+extension MainView {
+    
+    func setupUI() {
+        favoritesTableViewHelper = .init(with: tableViewFavorites)
+        ascDesTableViewHelper = .init(with: tableViewAscDes)
+    }
 }
 
 // MARK: - Presenter Related
 extension MainView {
     
-    func updateFavoritesTableView() {
-        <#code#>
+    func updateFavoritesTableView(_ items: [CryptoCurrency]) {
+        favoritesTableViewHelper.setItems(items)
     }
     
-    func updateAscDesTableView() {
-        <#code#>
+    func updateAscDesTableView(_ items: [CryptoCurrency]) {
+        ascDesTableViewHelper.setItems(items)
     }
 }

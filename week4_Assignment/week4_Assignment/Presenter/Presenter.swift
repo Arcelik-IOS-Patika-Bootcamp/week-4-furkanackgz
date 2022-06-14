@@ -18,28 +18,28 @@ class Presenter: Contract.presenter {
     
     // View related functions
     func viewDidload() {
-        <#code#>
+        interactor.fetchData()
     }
     
     func buttonAddTapped() {
-        <#code#>
+        
     }
     
     func buttonAscendantsTapped() {
-        <#code#>
+        return
     }
     
     func buttonDescendantsTapped() {
-        <#code#>
+        return
     }
     
     // Interactor related functions
-    func didFavoritesDataFetch() {
-        <#code#>
-    }
-    
-    func didAscDesDataFetch() {
-        <#code#>
+    func didDataFetch() {
+        guard let items = interactor.data else { return }
+        
+        mainView?.updateFavoritesTableView(items)
+        mainView?.updateAscDesTableView(items)
+        cryptoCurrencyView?.updateCollectionView(items)
     }
     
 }
