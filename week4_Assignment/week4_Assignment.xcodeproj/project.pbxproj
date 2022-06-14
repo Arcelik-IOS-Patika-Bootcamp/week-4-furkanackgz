@@ -16,9 +16,9 @@
 		0B7062CE285746F70046479C /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062CD285746F70046479C /* Contract.swift */; };
 		0B7062D1285749D00046479C /* CryptoCurrenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D0285749D00046479C /* CryptoCurrenciesView.swift */; };
 		0B7062D328576CD70046479C /* ContractHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D228576CD70046479C /* ContractHelper.swift */; };
-		0B7062D7285771FB0046479C /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D6285771FB0046479C /* Interactor.swift */; };
+		0B7062D7285771FB0046479C /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062D6285771FB0046479C /* MainViewInteractor.swift */; };
 		0B7062DC285775230046479C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DB285775230046479C /* WebService.swift */; };
-		0B7062DF285780030046479C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DE285780030046479C /* Presenter.swift */; };
+		0B7062DF285780030046479C /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062DE285780030046479C /* MainViewPresenter.swift */; };
 		0B7062E12857CCCD0046479C /* FavoritesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */; };
 		0B7062E52857D5ED0046479C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */; };
 		0B7062E62857D5ED0046479C /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */; };
@@ -28,6 +28,9 @@
 		0BC7BE1B28585F5500E7B233 /* CollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7BE1A28585F5500E7B233 /* CollectionViewHelper.swift */; };
 		0BC7BE1F28588A1A00E7B233 /* CryptoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7BE1D28588A1A00E7B233 /* CryptoCollectionViewCell.swift */; };
 		0BC7BE2028588A1A00E7B233 /* CryptoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BC7BE1E28588A1A00E7B233 /* CryptoCollectionViewCell.xib */; };
+		0BC7BE222858C19E00E7B233 /* CurrencyViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7BE212858C19E00E7B233 /* CurrencyViewPresenter.swift */; };
+		0BC7BE242858C69E00E7B233 /* CurrencyViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7BE232858C69E00E7B233 /* CurrencyViewInteractor.swift */; };
+		0BC7BE272858C72100E7B233 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7BE262858C72100E7B233 /* CryptoCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +45,9 @@
 		0B7062CD285746F70046479C /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		0B7062D0285749D00046479C /* CryptoCurrenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrenciesView.swift; sourceTree = "<group>"; };
 		0B7062D228576CD70046479C /* ContractHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractHelper.swift; sourceTree = "<group>"; };
-		0B7062D6285771FB0046479C /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		0B7062D6285771FB0046479C /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
 		0B7062DB285775230046479C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		0B7062DE285780030046479C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		0B7062DE285780030046479C /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 		0B7062E02857CCCD0046479C /* FavoritesTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewHelper.swift; sourceTree = "<group>"; };
 		0B7062E32857D5ED0046479C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		0B7062E42857D5ED0046479C /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
@@ -54,6 +57,9 @@
 		0BC7BE1A28585F5500E7B233 /* CollectionViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHelper.swift; sourceTree = "<group>"; };
 		0BC7BE1D28588A1A00E7B233 /* CryptoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewCell.swift; sourceTree = "<group>"; };
 		0BC7BE1E28588A1A00E7B233 /* CryptoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoCollectionViewCell.xib; sourceTree = "<group>"; };
+		0BC7BE212858C19E00E7B233 /* CurrencyViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewPresenter.swift; sourceTree = "<group>"; };
+		0BC7BE232858C69E00E7B233 /* CurrencyViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewInteractor.swift; sourceTree = "<group>"; };
+		0BC7BE262858C72100E7B233 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +149,9 @@
 		0B7062D5285770020046479C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				0B7062D6285771FB0046479C /* Interactor.swift */,
+				0BC7BE252858C71100E7B233 /* Data */,
+				0B7062D6285771FB0046479C /* MainViewInteractor.swift */,
+				0BC7BE232858C69E00E7B233 /* CurrencyViewInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -159,7 +167,8 @@
 		0B7062DD28577E880046479C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				0B7062DE285780030046479C /* Presenter.swift */,
+				0B7062DE285780030046479C /* MainViewPresenter.swift */,
+				0BC7BE212858C19E00E7B233 /* CurrencyViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -167,8 +176,8 @@
 		0B7062E22857CF600046479C /* XIB files */ = {
 			isa = PBXGroup;
 			children = (
-				0B7062EE2857DFB10046479C /* AscDesTableViewCell */,
 				0B7062ED2857DF9D0046479C /* FavoriteTableViewCell */,
+				0B7062EE2857DFB10046479C /* AscDesTableViewCell */,
 			);
 			path = "XIB files";
 			sourceTree = "<group>";
@@ -198,6 +207,14 @@
 				0BC7BE1E28588A1A00E7B233 /* CryptoCollectionViewCell.xib */,
 			);
 			path = "XIB files";
+			sourceTree = "<group>";
+		};
+		0BC7BE252858C71100E7B233 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BC7BE262858C72100E7B233 /* CryptoCurrency.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7062DF285780030046479C /* Presenter.swift in Sources */,
+				0B7062DF285780030046479C /* MainViewPresenter.swift in Sources */,
 				0B7062E12857CCCD0046479C /* FavoritesTableViewHelper.swift in Sources */,
 				0B3BB3192856745B0072A76E /* MainView.swift in Sources */,
 				0B3BB3152856745B0072A76E /* AppDelegate.swift in Sources */,
+				0BC7BE222858C19E00E7B233 /* CurrencyViewPresenter.swift in Sources */,
 				0B7062E82857DE1A0046479C /* AscDesTableViewHelper.swift in Sources */,
 				0B7062DC285775230046479C /* WebService.swift in Sources */,
 				0BC7BE1B28585F5500E7B233 /* CollectionViewHelper.swift in Sources */,
@@ -285,7 +303,9 @@
 				0BC7BE1F28588A1A00E7B233 /* CryptoCollectionViewCell.swift in Sources */,
 				0B3BB3172856745B0072A76E /* SceneDelegate.swift in Sources */,
 				0B7062CE285746F70046479C /* Contract.swift in Sources */,
-				0B7062D7285771FB0046479C /* Interactor.swift in Sources */,
+				0BC7BE242858C69E00E7B233 /* CurrencyViewInteractor.swift in Sources */,
+				0BC7BE272858C72100E7B233 /* CryptoCurrency.swift in Sources */,
+				0B7062D7285771FB0046479C /* MainViewInteractor.swift in Sources */,
 				0B7062D328576CD70046479C /* ContractHelper.swift in Sources */,
 				0B7062E52857D5ED0046479C /* FavoriteTableViewCell.swift in Sources */,
 				0B7062F12857E14C0046479C /* AscDesTableViewCell.swift in Sources */,

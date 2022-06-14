@@ -16,7 +16,8 @@ class MainView: UIViewController, Contract.mainView  {
     @IBOutlet weak var buttonDescendants: UIButton!
     @IBOutlet weak var tableViewAscDes: UITableView!
     
-    var presenter: Contract.presenter!
+    var mainViewPresenter: Contract.mainViewPresenter!
+    var currencyViewPresenter: Contract.currencyViewPresenter!
     
     private var favoritesTableViewHelper: FavoritesTableViewHelper!
     private var ascDesTableViewHelper: AscDesTableViewHelper!
@@ -25,19 +26,19 @@ class MainView: UIViewController, Contract.mainView  {
         super.viewDidLoad()
         
         setupUI()
-        presenter.viewDidload()
+        mainViewPresenter.viewDidload()
     }
     
     @IBAction func buttonAddTapped(_ sender: Any) {
-        presenter.buttonAddTapped()
+        mainViewPresenter.buttonAddTapped()
     }
     
     @IBAction func buttonAscendantsTapped(_ sender: Any) {
-        presenter.buttonAscendantsTapped()
+        mainViewPresenter.buttonAscendantsTapped()
     }
     
     @IBAction func buttonDescendantsTapped(_ sender: Any) {
-        presenter.buttonDescendantsTapped()
+        mainViewPresenter.buttonDescendantsTapped()
     }
     
 }

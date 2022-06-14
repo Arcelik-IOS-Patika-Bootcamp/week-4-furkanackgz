@@ -1,8 +1,8 @@
 //
-//  Interactor.swift
+//  CryptoCurrency.swift
 //  week4_Assignment
 //
-//  Created by Furkan Açıkgöz on 13.06.2022.
+//  Created by Furkan Açıkgöz on 14.06.2022.
 //
 
 import Foundation
@@ -29,23 +29,4 @@ struct CryptoCurrency: Codable {
     var firstId: Int?
     var lastId: Int?
     var count: Int?
-}
-
-class Interactor: Contract.interactor {
-    
-    var data: [CryptoCurrency]?
-    
-    var presenter: Contract.presenter?
-    
-    func fetchData() {
-        WebService.run.fetchCryptoCurrencies { [unowned self] data in
-            self.data = data
-            
-            DispatchQueue.main.async {
-                self.presenter?.didDataFetch()
-            }
-            
-        }
-    }
-    
 }

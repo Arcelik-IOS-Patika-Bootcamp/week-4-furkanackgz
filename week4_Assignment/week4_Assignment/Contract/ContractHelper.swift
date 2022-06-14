@@ -13,13 +13,13 @@ extension Contract {
         
         if let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainView") as? MainView {
             
-            let presenter = Presenter()
-            let interactor = Interactor()
+            let mainViewPresenter = MainViewPresenter()
+            let mainViewInteractor = MainViewInteractor()
             
-            mainView.presenter = presenter
-            presenter.mainView = mainView
-            presenter.interactor = interactor
-            interactor.presenter = presenter
+            mainView.mainViewPresenter = mainViewPresenter
+            mainViewPresenter.mainView = mainView
+            mainViewPresenter.mainViewInteractor = mainViewInteractor
+            mainViewInteractor.mainViewPresenter = mainViewPresenter
             
             return mainView
         }

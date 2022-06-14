@@ -7,18 +7,19 @@
 
 import Foundation
 
-class Presenter: Contract.presenter {
+class MainViewPresenter: Contract.mainViewPresenter {
     
     var mainView: Contract.mainView?
-    var cryptoCurrencyView: Contract.cryptoCurrencyView?
+    var mainViewInteractor: Contract.mainViewInteractor!
     
-    var interactor: Contract.interactor!
+    var cryptoCurrencyView: Contract.cryptoCurrencyView?
+    var currencyViewPresenter: Contract.currencyViewPresenter!
     
     var router: Contract.router!
     
     // View related functions
     func viewDidload() {
-        interactor.fetchData()
+        mainViewInteractor.fetchMainViewData()
     }
     
     func buttonAddTapped() {
@@ -35,11 +36,11 @@ class Presenter: Contract.presenter {
     
     // Interactor related functions
     func didDataFetch() {
-        guard let items = interactor.data else { return }
+        guard let items = mainViewInteractor.mainViewData else { return }
         
         mainView?.updateFavoritesTableView(items)
         mainView?.updateAscDesTableView(items)
-        cryptoCurrencyView?.updateCollectionView(items)
+        
     }
     
 }

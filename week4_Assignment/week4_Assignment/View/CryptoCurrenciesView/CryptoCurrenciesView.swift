@@ -9,7 +9,7 @@ import UIKit
 
 class CryptoCurrenciesView: UIViewController, Contract.cryptoCurrencyView {
     
-    var presenter: Contract.presenter!
+    var currencyViewPresenter: Contract.currencyViewPresenter!
     
     private var collectionViewHelper: CollectionViewHelper!
     
