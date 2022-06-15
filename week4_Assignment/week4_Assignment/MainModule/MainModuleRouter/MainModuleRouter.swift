@@ -16,12 +16,18 @@ class MainModuleRouter: MainModuleContract.mainModuleRouter {
 }
 
 extension MainModuleRouter {
-    func moveToCurrencyView() {
-        // create module gelecek
-        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CurrencyModuleView") as? CurrencyModuleView {
+    func moveToCurrencyView(_ mainModuleView: MainModuleView) {
+        
+        // Initilization of Currency Module
+        if let currencyModuleView = CurrencyModuleContract.createCurrencyModule() {
+
+            // Setting up Currency View Controller
+            currencyModuleView.viewDidLoad()
+
+            // Navigating to Currency View Controller
+            mainModuleView.present(currencyModuleView, animated: true)
             
-            UINavigationController().pushViewController(vc, animated: true)
-            currencyModulePresenter?.viewDidload()
+            //mainModuleView.navigationController?.pushViewController(currencyModuleView, animated: true)
         }
         
     }

@@ -41,7 +41,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="buttonAddTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTt-B1-1yx"/>
-                                                    <segue destination="06j-QD-hYf" kind="show" id="PIH-8o-5MJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -141,10 +140,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHy-8D-6xQ" userLabel="Container View">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UHN-bT-Sc2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Qj-8K-Hg5">
                                             <size key="itemSize" width="128" height="128"/>

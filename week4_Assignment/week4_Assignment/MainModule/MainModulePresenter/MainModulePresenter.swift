@@ -23,7 +23,7 @@ class MainModulePresenter: MainModuleContract.mainModulePresenter {
     }
     
     func buttonAddTapped() {
-        
+        mainModuleRouter.moveToCurrencyView(mainModuleView as! MainModuleView)
     }
     
     func buttonAscendantsTapped() {
