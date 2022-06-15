@@ -18,10 +18,13 @@ protocol CurrencyModulePresenterProtocol: AnyObject {
     var currencyModuleInteractor: CurrencyModuleContract.currencyModuleInteractor! { get set }
     var currencyModuleRouter: CurrencyModuleContract.currencyModuleRouter! { get set}
     
+    var mainModuleView: MainModuleContract.mainModuleView? { get set }
     var mainModulePresenter: MainModuleContract.mainModulePresenter? { get set }
     var mainModuleRouter: MainModuleContract.mainModuleRouter! { get set }
     
     func viewDidload()
+    
+    func didSelectItemAt(_ item: CryptoCurrency)
     
     func didDataFetch()
 }
@@ -40,7 +43,7 @@ protocol CurrencyModuleRouterProtocol: AnyObject {
     var currencyModulePresenter: CurrencyModuleContract.currencyModulePresenter? { get set }
     var mainModulePresenter: MainModuleContract.mainModulePresenter? { get set }
     
-    func moveToMainView()
+    func moveToMainView(_ currencyModalView: CurrencyModuleView)
 }
 
 struct CurrencyModuleContract {

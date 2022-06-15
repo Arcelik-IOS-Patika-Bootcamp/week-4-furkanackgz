@@ -9,6 +9,8 @@ import UIKit
 
 class MainModuleRouter: MainModuleContract.mainModuleRouter {
     
+    var mainModuleView: MainModuleContract.mainModuleView!
+    
     var mainModulePresenter: MainModuleContract.mainModulePresenter?
     
     var currencyModulePresenter: CurrencyModuleContract.currencyModulePresenter?
@@ -19,7 +21,7 @@ extension MainModuleRouter {
     func moveToCurrencyView(_ mainModuleView: MainModuleView) {
         
         // Initilization of Currency Module
-        if let currencyModuleView = CurrencyModuleContract.createCurrencyModule() {
+        if let currencyModuleView = CurrencyModuleContract.createCurrencyModule(mainModuleView) {
 
             // Setting up Currency View Controller
             currencyModuleView.viewDidLoad()

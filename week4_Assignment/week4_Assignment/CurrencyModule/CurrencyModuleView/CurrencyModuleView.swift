@@ -28,7 +28,7 @@ extension CurrencyModuleView {
     
     func setupUI() {
         if let collectionView = collectionView {
-            collectionViewHelper = .init(with: collectionView)
+            collectionViewHelper = .init(with: collectionView, currencyModulePresenter)
         }
     }
 }

@@ -12,12 +12,15 @@ class CollectionViewHelper: NSObject {
     
     private var currensies: [CryptoCurrency] = []
     
+    var currencyModulePresenter: CurrencyModuleContract.currencyModulePresenter!
+    
     weak var collectionView: UICollectionView?
     
-    init(with collectionView: UICollectionView) {
+    init(with collectionView: UICollectionView, _ currencyModulePresenter: CurrencyModuleContract.currencyModulePresenter) {
         super.init()
         
         self.collectionView = collectionView
+        self.currencyModulePresenter = currencyModulePresenter
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -41,7 +44,12 @@ extension CollectionViewHelper {
 }
 
 // MARK: - Collection View Delegation methods
-extension CollectionViewHelper: UICollectionViewDelegate { }
+extension CollectionViewHelper: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedCurrency = currensies[indexPath.item]
+        currencyModulePresenter.didSelectItemAt(selectedCurrency)
+    }
+}
 
 extension CollectionViewHelper: UICollectionViewDataSource {
     
