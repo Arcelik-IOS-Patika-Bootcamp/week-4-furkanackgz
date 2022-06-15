@@ -19,7 +19,7 @@ extension WebService {
     
     func fetchCryptoCurrencies(_ completion:@escaping (([CryptoCurrency]?)->(Void)) ) {
         
-        guard let url = URL(string: "https://api.binance.us/api/v3/ticker/24hr") else { return }
+        guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc") else { return }
         
         let task = session.dataTask(with: url) { data, response, error in
             

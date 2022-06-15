@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AscDesTableViewHelper: NSObject {
     
@@ -49,10 +50,21 @@ extension AscDesTableViewHelper: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewAscDes?.dequeueReusableCell(withIdentifier: "AscDesTableViewCell") as! AscDesTableViewCell
-        cell.labelSymbol.text = currencies[indexPath.row].symbol
-        cell.labelLastPrice.text = currencies[indexPath.row].lastPrice
-        cell.labelPercent.text = currencies[indexPath.row].priceChangePercent
-        
+        if let imageUrl = currencies[indexPath.row].image {
+            cell.cellImageView.kf.setImage(with: URL(string: imageUrl))
+        }
+        cell.labelName.text = currencies[indexPath.row].name
+        if let percentage = currencies[indexPath.row].priceChangePercentage24h {
+            cell.labelPercentage.text = "\(percentage)"
+            
+            if percentage >= 0 {
+                cell.percentageBackground.backgroundColor = .systemGreen
+                cell.percentageBackground.layer.cornerRadius = 8
+            } else {
+                cell.percentageBackground.backgroundColor = .systemRed
+                cell.percentageBackground.layer.cornerRadius = 8
+            }
+        }
         return cell
     }
     

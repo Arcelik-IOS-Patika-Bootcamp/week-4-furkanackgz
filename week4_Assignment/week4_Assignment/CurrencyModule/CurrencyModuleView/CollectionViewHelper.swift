@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CollectionViewHelper: NSObject {
     
@@ -50,10 +51,13 @@ extension CollectionViewHelper: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CryptoCollectionViewCell", for: indexPath) as! CryptoCollectionViewCell
-        
-        cell.labelSymbol.text = currensies[indexPath.row].symbol
-        cell.labelLastPrice.text = currensies[indexPath.row].lastPrice
-        
+        if let imageUrl = currensies[indexPath.row].image {
+            cell.imageView.kf.setImage(with: URL(string: imageUrl))
+        }
+        cell.labelSymbol.text = currensies[indexPath.row].name
+        if let percentage = currensies[indexPath.row].priceChangePercentage24h {
+            cell.labelLastPrice.text = "\(percentage)"
+        }
         return cell
     }
     
@@ -63,7 +67,7 @@ extension CollectionViewHelper: UICollectionViewDataSource {
 extension CollectionViewHelper {
     
     func createBasicListLayout() -> UICollectionViewLayout {
-        let fraction: CGFloat = 1 / 2
+        let fraction: CGFloat = 1 / 3
         let inset: CGFloat = 2.5
         
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(fraction), heightDimension: .fractionalHeight(1))

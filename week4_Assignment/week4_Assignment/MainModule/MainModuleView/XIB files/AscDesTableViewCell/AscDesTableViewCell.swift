@@ -10,10 +10,12 @@ import UIKit
 class AscDesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var labelSymbol: UILabel!
-    @IBOutlet weak var labelLastPrice: UILabel!
-    @IBOutlet weak var labelPercent: UILabel!
+    @IBOutlet weak var cellImageView: UIImageView!
     
+    @IBOutlet weak var labelName: UILabel!
+    
+    @IBOutlet weak var percentageBackground: UIView!
+    @IBOutlet weak var labelPercentage: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         

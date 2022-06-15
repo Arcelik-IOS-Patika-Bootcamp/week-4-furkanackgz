@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FavoritesTableViewHelper: NSObject {
     
@@ -50,11 +51,23 @@ extension FavoritesTableViewHelper: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell") as! FavoriteTableViewCell
-        cell.labelSymbol.text = currensies[indexPath.row].symbol
-        cell.labelVolume.text = currensies[indexPath.row].volume
-        cell.labelPrice.text = currensies[indexPath.row].lastPrice
-        cell.labelPercent.text = currensies[indexPath.row].priceChangePercent
-        cell.labelChange.text = currensies[indexPath.row].priceChange
+        if let imageUrl = currensies[indexPath.row].image {
+            cell.cellImageView.kf.setImage(with: URL(string: imageUrl))
+        }
+        cell.labelName.text = currensies[indexPath.row].name
+        
+        if let percentage = currensies[indexPath.row].priceChangePercentage24h {
+            cell.labelPercentage.text = "\(percentage)"
+            
+            if percentage >= 0 {
+                cell.percentageBackground.backgroundColor = .systemGreen
+                cell.percentageBackground.layer.cornerRadius = 8
+            } else {
+                cell.percentageBackground.backgroundColor = .systemRed
+                cell.percentageBackground.layer.cornerRadius = 8
+            }
+        }
+        
         return cell
     }
     
