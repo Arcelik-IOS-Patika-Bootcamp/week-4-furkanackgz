@@ -17,9 +17,20 @@ class CurrencyModuleView: UIViewController, CurrencyModuleContract.currencyModul
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupUI()
+        currencyModulePresenter.viewDidload()
     }
 
+}
+
+extension CurrencyModuleView {
+    
+    func setupUI() {
+        if let collectionView = collectionView {
+            collectionViewHelper = .init(with: collectionView)
+        }
+    }
 }
 
 // MARK: - Crypto Currency Protocol Methods

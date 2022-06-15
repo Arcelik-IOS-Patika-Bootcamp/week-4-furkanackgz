@@ -20,6 +20,7 @@ class CollectionViewHelper: NSObject {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.collectionViewLayout = self.createBasicListLayout()
         
         registerCell()
     }
@@ -56,4 +57,25 @@ extension CollectionViewHelper: UICollectionViewDataSource {
         return cell
     }
     
+}
+
+// Collection View
+extension CollectionViewHelper {
+    
+    func createBasicListLayout() -> UICollectionViewLayout {
+        let fraction: CGFloat = 1 / 2
+        let inset: CGFloat = 2.5
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(fraction), heightDimension: .fractionalHeight(1))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(fraction))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
+        
+        return UICollectionViewCompositionalLayout(section: section)
+    }
 }
