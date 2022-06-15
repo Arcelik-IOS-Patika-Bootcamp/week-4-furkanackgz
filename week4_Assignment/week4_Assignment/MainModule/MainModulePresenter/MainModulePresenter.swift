@@ -26,19 +26,10 @@ class MainModulePresenter: MainModuleContract.mainModulePresenter {
         mainModuleRouter.moveToCurrencyView(mainModuleView as! MainModuleView)
     }
     
-    func buttonAscendantsTapped() {
-        return
-    }
-    
-    func buttonDescendantsTapped() {
-        return
-    }
-    
     // Interactor related functions
     func didDataFetch() {
         guard let items = mainModuleInteractor.mainModuleData else { return }
         
-        mainModuleView?.updateFavoritesTableView(items)
         mainModuleView?.updateAscDesTableView(items)
         
     }
