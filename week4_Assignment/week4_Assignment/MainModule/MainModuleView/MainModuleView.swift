@@ -12,8 +12,6 @@ class MainModuleView: UIViewController, MainModuleContract.mainModuleView  {
     @IBOutlet weak var labelFavorites: UILabel!
     @IBOutlet weak var buttonAdd: UIButton!
     @IBOutlet weak var tableViewFavorites: UITableView!
-    @IBOutlet weak var buttonAscendants: UIButton!
-    @IBOutlet weak var buttonDescendants: UIButton!
     @IBOutlet weak var tableViewAscDes: UITableView!
     
     var mainModulePresenter: MainModuleContract.mainModulePresenter!
@@ -31,14 +29,6 @@ class MainModuleView: UIViewController, MainModuleContract.mainModuleView  {
     
     @IBAction func buttonAddTapped(_ sender: Any) {
         mainModulePresenter.buttonAddTapped()
-    }
-    
-    @IBAction func buttonAscendantsTapped(_ sender: Any) {
-        mainModulePresenter.buttonAscendantsTapped()
-    }
-    
-    @IBAction func buttonDescendantsTapped(_ sender: Any) {
-        mainModulePresenter.buttonDescendantsTapped()
     }
     
 }

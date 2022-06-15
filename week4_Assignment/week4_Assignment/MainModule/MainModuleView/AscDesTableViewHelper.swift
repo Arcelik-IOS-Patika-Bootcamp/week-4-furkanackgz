@@ -55,7 +55,7 @@ extension AscDesTableViewHelper: UITableViewDataSource {
         }
         cell.labelName.text = currencies[indexPath.row].name
         if let percentage = currencies[indexPath.row].priceChangePercentage24h {
-            cell.labelPercentage.text = "\(percentage)"
+            cell.labelPercentage.text = "% " + String(format: "%.2f", percentage)
             
             if percentage >= 0 {
                 cell.percentageBackground.backgroundColor = .systemGreen

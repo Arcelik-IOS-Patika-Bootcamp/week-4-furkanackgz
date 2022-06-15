@@ -52,55 +52,29 @@
                                             <constraint firstAttribute="height" constant="275" id="SSu-GA-zkW"/>
                                         </constraints>
                                     </tableView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-3B-Zm5" userLabel="Ascendants Stack View">
-                                        <rect key="frame" x="20" y="343" width="374" height="35"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZ8-YQ-7Ya">
-                                                <rect key="frame" x="0.0" y="0.0" width="174.5" height="35"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="ASCENDANTS">
-                                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
-                                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
-                                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="buttonAscendantsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6h4-4r-dSy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd5-kR-Mp2">
-                                                <rect key="frame" x="199.5" y="0.0" width="174.5" height="35"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="DESCENDANTS">
-                                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
-                                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="buttonDescendantsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bg9-72-rJU"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="StC-Ev-9Kl"/>
-                                        </constraints>
-                                    </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-aA-Dyy" userLabel="Ascendants Table View">
-                                        <rect key="frame" x="0.0" y="388" width="414" height="386"/>
+                                        <rect key="frame" x="0.0" y="391" width="414" height="383"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last 24h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-DL-7ba">
+                                        <rect key="frame" x="20" y="343" width="115.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ns6-ec-zGU" secondAttribute="trailing" id="1Wq-Gd-uMa"/>
+                                    <constraint firstItem="0KR-aA-Dyy" firstAttribute="top" secondItem="CQs-DL-7ba" secondAttribute="bottom" constant="10" id="23s-1P-xQV"/>
+                                    <constraint firstItem="CQs-DL-7ba" firstAttribute="top" secondItem="ns6-ec-zGU" secondAttribute="bottom" constant="10" id="2x1-pR-y9o"/>
                                     <constraint firstItem="0KR-aA-Dyy" firstAttribute="leading" secondItem="xzP-yf-iUo" secondAttribute="leading" id="6gq-eZ-Eho"/>
                                     <constraint firstItem="ns6-ec-zGU" firstAttribute="leading" secondItem="xzP-yf-iUo" secondAttribute="leading" id="Ev7-2i-zBo"/>
                                     <constraint firstAttribute="trailing" secondItem="0KR-aA-Dyy" secondAttribute="trailing" id="FDJ-tK-kW3"/>
+                                    <constraint firstItem="CQs-DL-7ba" firstAttribute="leading" secondItem="xzP-yf-iUo" secondAttribute="leading" constant="20" id="Fdj-1Q-lHB"/>
                                     <constraint firstItem="G6F-k7-WNm" firstAttribute="top" secondItem="xzP-yf-iUo" secondAttribute="top" constant="10" id="Vyk-ie-Sma"/>
-                                    <constraint firstItem="Osf-3B-Zm5" firstAttribute="top" secondItem="ns6-ec-zGU" secondAttribute="bottom" constant="10" id="Wgr-Wy-ydm"/>
                                     <constraint firstItem="G6F-k7-WNm" firstAttribute="leading" secondItem="xzP-yf-iUo" secondAttribute="leading" constant="20" id="bkd-uQ-JUv"/>
-                                    <constraint firstAttribute="trailing" secondItem="Osf-3B-Zm5" secondAttribute="trailing" constant="20" id="jpN-sL-Xhs"/>
-                                    <constraint firstItem="0KR-aA-Dyy" firstAttribute="top" secondItem="Osf-3B-Zm5" secondAttribute="bottom" constant="10" id="msh-1r-S8U"/>
                                     <constraint firstItem="ns6-ec-zGU" firstAttribute="top" secondItem="G6F-k7-WNm" secondAttribute="bottom" constant="10" id="oCQ-4s-oPy"/>
-                                    <constraint firstItem="Osf-3B-Zm5" firstAttribute="leading" secondItem="xzP-yf-iUo" secondAttribute="leading" constant="20" id="u1B-8i-RAR"/>
                                     <constraint firstAttribute="trailing" secondItem="G6F-k7-WNm" secondAttribute="trailing" constant="20" id="xF9-vn-XCZ"/>
                                     <constraint firstAttribute="bottom" secondItem="0KR-aA-Dyy" secondAttribute="bottom" id="xSU-Bd-eZI"/>
                                 </constraints>
@@ -120,8 +94,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="buttonAdd" destination="f6S-px-gA9" id="3QO-Ue-ARC"/>
-                        <outlet property="buttonAscendants" destination="wZ8-YQ-7Ya" id="YnI-1f-Sge"/>
-                        <outlet property="buttonDescendants" destination="gd5-kR-Mp2" id="qru-FQ-tGZ"/>
                         <outlet property="labelFavorites" destination="RWG-2k-LSV" id="1AU-9M-RPa"/>
                         <outlet property="tableViewAscDes" destination="0KR-aA-Dyy" id="xNM-zf-0Tb"/>
                         <outlet property="tableViewFavorites" destination="ns6-ec-zGU" id="1G1-hz-YFX"/>
@@ -216,14 +188,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

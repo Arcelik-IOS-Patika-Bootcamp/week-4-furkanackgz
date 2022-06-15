@@ -34,10 +34,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mG-Mq-byg" userLabel="Percentage Background">
-                                <rect key="frame" x="191" y="10" width="103" height="50"/>
+                                <rect key="frame" x="204" y="10" width="90" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZo-A7-LRJ">
-                                        <rect key="frame" x="8" y="8" width="87" height="34"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZo-A7-LRJ">
+                                        <rect key="frame" x="8" y="8" width="74" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,6 +47,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="fZo-A7-LRJ" secondAttribute="trailing" constant="8" id="58B-QM-JlP"/>
                                     <constraint firstItem="fZo-A7-LRJ" firstAttribute="leading" secondItem="4mG-Mq-byg" secondAttribute="leading" constant="8" id="Bsx-7y-8No"/>
+                                    <constraint firstAttribute="width" constant="90" id="ZZC-lR-Tab"/>
                                     <constraint firstItem="fZo-A7-LRJ" firstAttribute="top" secondItem="4mG-Mq-byg" secondAttribute="top" constant="8" id="qmt-hg-2fm"/>
                                     <constraint firstAttribute="bottom" secondItem="fZo-A7-LRJ" secondAttribute="bottom" constant="8" id="sma-Dm-RA4"/>
                                 </constraints>

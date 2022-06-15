@@ -24,8 +24,6 @@ protocol MainModulePresenterProtocol: AnyObject {
     
     func viewDidload()
     func buttonAddTapped()
-    func buttonAscendantsTapped()
-    func buttonDescendantsTapped()
     
     func didDataFetch()
 }
