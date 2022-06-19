@@ -25,6 +25,9 @@ protocol MainModulePresenterProtocol: AnyObject {
     func viewDidload()
     func buttonAddTapped()
     
+    func hideNavigationBar(_ mainModuleView: MainModuleView)
+    func exposeNavigationBar(_ mainModuleView: MainModuleView)
+    
     func didDataFetch()
 }
 

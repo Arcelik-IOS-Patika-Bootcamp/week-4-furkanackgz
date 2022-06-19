@@ -27,6 +27,16 @@ class MainModuleView: UIViewController, MainModuleContract.mainModuleView  {
         mainModulePresenter.viewDidload()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mainModulePresenter.hideNavigationBar(self)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        mainModulePresenter.exposeNavigationBar(self)
+    }
+    
     @IBAction func buttonAddTapped(_ sender: Any) {
         mainModulePresenter.buttonAddTapped()
     }
