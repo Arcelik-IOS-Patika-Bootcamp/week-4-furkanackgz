@@ -17,7 +17,7 @@ class CurrencyModuleRouter: CurrencyModuleContract.currencyModuleRouter {
 
 extension CurrencyModuleRouter {
     
-    func moveToMainView(_ currencyModalView: CurrencyModuleView) {
-        currencyModalView.dismiss(animated: true)
+    func moveToMainView(_ currencyModuleView: CurrencyModuleView) {
+        currencyModuleView.navigationController?.popViewController(animated: true)
     }
 }

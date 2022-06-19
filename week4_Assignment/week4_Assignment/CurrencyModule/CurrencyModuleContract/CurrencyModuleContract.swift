@@ -43,7 +43,7 @@ protocol CurrencyModuleRouterProtocol: AnyObject {
     var currencyModulePresenter: CurrencyModuleContract.currencyModulePresenter? { get set }
     var mainModulePresenter: MainModuleContract.mainModulePresenter? { get set }
     
-    func moveToMainView(_ currencyModalView: CurrencyModuleView)
+    func moveToMainView(_ currencyModuleView: CurrencyModuleView)
 }
 
 struct CurrencyModuleContract {
