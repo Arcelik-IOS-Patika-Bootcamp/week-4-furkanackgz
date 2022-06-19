@@ -27,7 +27,7 @@ extension MainModuleRouter {
             currencyModuleView.viewDidLoad()
 
             // Navigating to Currency View Controller
-            mainModuleView.present(currencyModuleView, animated: true)
+            mainModuleView.navigationController?.pushViewController(currencyModuleView, animated: true)
             
             //mainModuleView.navigationController?.pushViewController(currencyModuleView, animated: true)
         }
