@@ -35,7 +35,7 @@ extension FavoritesTableViewHelper {
     }
     
     func setItems(_ items: [CryptoCurrency]) {
-        currensies = items
+        currensies += items
         tableViewFavorites?.reloadData()
     }
 }
