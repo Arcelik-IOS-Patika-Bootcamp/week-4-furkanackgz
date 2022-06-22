@@ -35,15 +35,3 @@ class MainModulePresenter: MainModuleContract.mainModulePresenter {
     }
     
 }
-
-// Hiding and Exposing Navigation bar
-extension MainModulePresenter {
-    func hideNavigationBar(_ mainModuleView: MainModuleView) {
-        mainModuleView.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    func exposeNavigationBar(_ mainModuleView: MainModuleView) {
-        mainModuleView.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
-}
